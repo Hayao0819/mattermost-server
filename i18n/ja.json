@@ -68,6 +68,10 @@
     "translation": "証明書ファイルを保存できませんでした。"
   },
   {
+    "id": "api.admin.delete_brand_image.storage.not_found",
+    "translation": "ブランドイメージが見つからないため削除できません。"
+  },
+  {
     "id": "api.admin.file_read_error",
     "translation": "ログファイルの読み込み中にエラーが発生しました。"
   },
@@ -78,6 +82,30 @@
   {
     "id": "api.admin.remove_certificate.delete.app_error",
     "translation": "OAuth2アプリケーションを削除中にエラーが発生しました"
+  },
+{
+    "id": "api.admin.saml.failure_get_metadata_from_idp.app_error",
+    "translation": "IDプロバイダーのURLからメタデータを取得できませんでした。"
+  },
+  {
+    "id": "api.admin.saml.failure_parse_idp_certificate.app_error",
+    "translation": "IDプロバイダーから受信したメタデータ情報を証明書に解析しているときにエラーが発生しました。"
+  },
+  {
+    "id": "api.admin.saml.failure_save_idp_certificate_file.app_error",
+    "translation": "証明書ファイルを保存できませんでした。"
+  },
+  {
+    "id": "api.admin.saml.invalid_xml_missing_idpssodescriptors.app_error",
+    "translation": "XMLにIDプロバイダーSSO記述子ノードがありません。"
+  },
+  {
+    "id": "api.admin.saml.invalid_xml_missing_keydescriptor.app_error",
+    "translation": "XMLにIDプロバイダーキー記述子ノードがありません。"
+  },
+  {
+    "id": "api.admin.saml.invalid_xml_missing_ssoservices.app_error",
+    "translation": "XMLにIDプロバイダーSSOサービスノードがありません。"
   },
   {
     "id": "api.admin.saml.metadata.app_error",
@@ -128,8 +156,60 @@
     "translation": "画像ファイルをアップロードできません。ファイルが大き過ぎます。"
   },
   {
+    "id": "api.bot.create_disabled",
+    "translation": "ボットの作成は無効になっています。"
+  },
+  {
+    "id": "api.bot.delete_bot_icon_image.app_error",
+    "translation": "アイコンを削除できませんでした。"
+  },
+  {
+    "id": "api.bot.get_bot_icon_image.read.app_error",
+    "translation": "アイコンのファイルを読み取れません。"
+  },
+  {
+    "id": "api.bot.set_bot_icon_image.app_error",
+    "translation": "アイコンをアップロードできませんでした。"
+  },
+  {
+    "id": "api.bot.set_bot_icon_image.array.app_error",
+    "translation": "Empty array under 'image' in request."
+  },
+  {
+    "id": "api.bot.set_bot_icon_image.no_file.app_error",
+    "translation": "No file under 'image' in request."
+  },
+  {
+    "id": "api.bot.set_bot_icon_image.open.app_error",
+    "translation": "画像を開けませんでした。"
+  },
+  {
+    "id": "api.bot.set_bot_icon_image.parse.app_error",
+    "translation": "multipart　フォームを解析できませんでした。"
+  },
+  {
+    "id": "api.bot.set_bot_icon_image.too_large.app_error",
+    "translation": "アイコンをアップロードできません。 ファイルが大きすぎます。"
+  },
+  {
+    "id": "api.bot.teams_channels.add_message_mobile",
+    "translation": "やり取りしたいチームとチャネルに追加してください。これを行うには、ブラウザーまたはMattermostデスクトップアプリを使用してください。"
+  },
+  {
+    "id": "api.channel.add_guest.added",
+    "translation": "%v は %v によってゲストとして追加されました。"
+  },
+  {
     "id": "api.channel.add_member.added",
     "translation": "%v は %v によってチャンネルに追加されました。"
+  },
+  {
+    "id": "api.channel.add_members.error",
+    "translation": "チャンネルメンバーの追加中にエラーが発生しました。"
+  },
+  {
+    "id": "api.channel.add_members.user_denied",
+    "translation": "グループの制約のため、次のユーザーのチャンネルの会員は拒否されました: {{ .UserIDs }}"
   },
   {
     "id": "api.channel.add_user.to.channel.failed.app_error",
@@ -150,6 +230,10 @@
   {
     "id": "api.channel.change_channel_privacy.public_to_private",
     "translation": "このチャンネルは非公開チャンネルに変更されました。"
+  },
+  {
+    "id": "api.channel.channel_member_counts_by_group.license.error",
+    "translation": "ライセンスはグループをサポートしていません"
   },
   {
     "id": "api.channel.convert_channel_to_private.default_channel_error",
@@ -232,6 +316,10 @@
     "translation": "%v がチャンネルから脱退しました。"
   },
   {
+    "id": "api.channel.patch_channel_moderations.license.error",
+    "translation": "現在のライセンスはチャンネル管理をサポートしていません"
+  },
+  {
     "id": "api.channel.patch_update_channel.forbidden.app_error",
     "translation": "チャンネルを更新できませんでした"
   },
@@ -284,8 +372,20 @@
     "translation": "チャンネルからユーザーを削除できません。"
   },
   {
+    "id": "api.channel.remove_member.group_constrained.app_error",
+    "translation": "グループに制限されたチャンネルからユーザーを削除できません。"
+  },
+  {
     "id": "api.channel.remove_member.removed",
     "translation": "%v はチャンネルから削除されました。"
+  },
+  {
+    "id": "api.channel.remove_members.denied",
+    "translation": "グループの制限により次のユーザーはチャンネル会員からの削除を拒否されました: {{ .UserIDs }}"
+  },
+  {
+    "id": "api.channel.remove_user_from_channel.app_error",
+    "translation": "このチャネルタイプからユーザーを削除できません。"
   },
   {
     "id": "api.channel.rename_channel.cant_rename_direct_messages.app_error",
@@ -296,6 +396,14 @@
     "translation": "グループメッセージチャンネルの名前は変更できません"
   },
   {
+    "id": "api.channel.restore_channel.restored.app_error",
+    "translation": "このチャンネルはアーカイブされていないため解除できません。"
+  },
+  {
+    "id": "api.channel.restore_channel.unarchived",
+    "translation": "{{.Username}} がチャンネルのアーカイブを解除しました."
+  },
+  {
     "id": "api.channel.update_channel.deleted.app_error",
     "translation": "チャンネルはアーカイブされているか削除されています"
   },
@@ -304,8 +412,24 @@
     "translation": "デフォルトのチャンネル{{.Channel}}に不正な更新をしようとしました"
   },
   {
+    "id": "api.channel.update_channel.typechange.app_error",
+    "translation": "Channel type cannot be updated."
+  },
+  {
+    "id": "api.channel.update_channel_member_roles.changing_guest_role.app_error",
+    "translation": "Invalid channel member update: You can't add or remove the guest role manually."
+  },
+  {
+    "id": "api.channel.update_channel_member_roles.guest_and_user.app_error",
+    "translation": "Invalid channel member update: A user must be a guest or a user but not both."
+  },
+  {
     "id": "api.channel.update_channel_member_roles.scheme_role.app_error",
     "translation": "与えられた役割はスキームによって管理されているため、チャンネルメンバーへ直接適用することはできません。"
+  },
+  {
+    "id": "api.channel.update_channel_privacy.default_channel_error",
+    "translation": "The default channel cannot be made private."
   },
   {
     "id": "api.channel.update_channel_scheme.license.error",
@@ -314,6 +438,10 @@
   {
     "id": "api.channel.update_channel_scheme.scheme_scope.error",
     "translation": "与えられたスキームがチャンネルスキームでないため、チャンネルへスキームを設定できません。"
+  },
+  {
+    "id": "api.channel.update_team_member_roles.changing_guest_role.app_error",
+    "translation": "Invalid team member update: You can't add or remove the guest role manually."
   },
   {
     "id": "api.channel.update_team_member_roles.scheme_role.app_error",
@@ -354,6 +482,10 @@
   {
     "id": "api.command.execute_command.failed_resp.app_error",
     "translation": "トリガー'{{.Trigger}}'によるコマンドは{{.Status}}状態を返しました"
+  },
+  {
+    "id": "api.command.execute_command.format.app_error",
+    "translation": "Command trigger word is missing the leading slash character"
   },
   {
     "id": "api.command.execute_command.not_found.app_error",
@@ -675,6 +807,10 @@
     "translation": "チャンネルに参加する際にエラーが発生しました。"
   },
   {
+    "id": "api.command_invite.group_constrained_user_denied",
+    "translation": "This channel is managed by groups.  This user is not part of a group that is synced to this channel."
+  },
+  {
     "id": "api.command_invite.hint",
     "translation": "@[ユーザー名] ~[チャンネル]"
   },
@@ -705,6 +841,10 @@
   {
     "id": "api.command_invite.user_already_in_channel.app_error",
     "translation": "{{.User}} は既にチャンネルに追加されています。"
+  },
+  {
+    "id": "api.command_invite.user_not_in_team.app_error",
+    "translation": "@{{.Username}} is not a member of the team."
   },
   {
     "id": "api.command_invite_people.permission.app_error",
@@ -879,6 +1019,10 @@
     "translation": "ダイレクトメッセージチャンネルからメンバーを削除することはできません。"
   },
   {
+    "id": "api.command_remove.group_constrained_user_denied",
+    "translation": "User cannot be removed from the channel by you because they are a member of the groups linked to this channel. To remove them from this channel, they must be removed from the linked groups."
+  },
+  {
     "id": "api.command_remove.hint",
     "translation": "@[ユーザー名]"
   },
@@ -959,6 +1103,10 @@
     "translation": "クライアントの設定で新しい形式がまだサポートされていません。クエリー文字列に format=old を指定してください。"
   },
   {
+    "id": "api.config.update_config.restricted_merge.app_error",
+    "translation": "Failed to merge given config."
+  },
+  {
     "id": "api.context.404.app_error",
     "translation": "申し訳ありません。ページが見付かりません。"
   },
@@ -979,12 +1127,20 @@
     "translation": "リクエストURLの{{.Name}}が存在しないか不正です"
   },
   {
+    "id": "api.context.local_origin_required.app_error",
+    "translation": "This endpoint requires a local request origin."
+  },
+  {
     "id": "api.context.mfa_required.app_error",
     "translation": "このサーバーでは多要素認証が必要です。"
   },
   {
     "id": "api.context.permissions.app_error",
     "translation": "あなたには必要な権限が付与されていません"
+  },
+  {
+    "id": "api.context.server_busy.app_error",
+    "translation": "Server is busy, non-critical services are temporarily unavailable."
   },
   {
     "id": "api.context.session_expired.app_error",
@@ -1047,6 +1203,10 @@
   {
     "id": "api.emoji.create.duplicate.app_error",
     "translation": "絵文字を作成できません。同じ名前を持つ他の絵文字が既に存在しています。"
+  },
+  {
+    "id": "api.emoji.create.internal_error",
+    "translation": "server_error: Encountered internal server error creating the emoji."
   },
   {
     "id": "api.emoji.create.other_user.app_error",
@@ -1237,6 +1397,10 @@
     "translation": "ローカルサーバーストレージへの書き込みに失敗しました"
   },
   {
+    "id": "api.image.get.app_error",
+    "translation": "Requested image url cannot be parsed."
+  },
+  {
     "id": "api.incoming_webhook.disabled.app_error",
     "translation": "内向きのウェブフックはシステム管理者によって無効にされています。"
   },
@@ -1251,6 +1415,18 @@
   {
     "id": "api.ldap_group.not_found",
     "translation": "LDAPグループが見付かりません"
+  },
+  {
+    "id": "api.ldap_groups.existing_group_name_error",
+    "translation": "group name already exists"
+  },
+  {
+    "id": "api.ldap_groups.existing_reserved_name_error",
+    "translation": "group name already exists as a reserved name"
+  },
+  {
+    "id": "api.ldap_groups.existing_user_name_error",
+    "translation": "group name already exists as a user name"
   },
   {
     "id": "api.ldap_groups.license_error",
@@ -1295,6 +1471,18 @@
   {
     "id": "api.license.client.old_format.app_error",
     "translation": "クライアントのライセンスで新しい形式がまだサポートされていません。クエリー文字列に format=old を指定してください。"
+  },
+  {
+    "id": "api.license.remove_expired_license.failed.error",
+    "translation": "Failed to send the disable license email successfully."
+  },
+  {
+    "id": "api.license.request-trial.bad-request",
+    "translation": "The number of users requested is not correct."
+  },
+  {
+    "id": "api.license.request_trial_license.app_error",
+    "translation": "Unable to get a trial license, please try again or contact with support@mattermost.com."
   },
   {
     "id": "api.marshal_error",
@@ -1405,6 +1593,14 @@
     "translation": "外向きのウェブフックはシステム管理者によって無効にされています。"
   },
   {
+    "id": "api.plugin.add_public_key.open.app_error",
+    "translation": "An error occurred while opening the public key file."
+  },
+  {
+    "id": "api.plugin.install.download_failed.app_error",
+    "translation": "An error occurred while downloading the plugin."
+  },
+  {
     "id": "api.plugin.upload.array.app_error",
     "translation": "multipart/formリクエストのファイル配列が空です"
   },
@@ -1415,6 +1611,22 @@
   {
     "id": "api.plugin.upload.no_file.app_error",
     "translation": "multipart/formリクエストにファイルが存在しません"
+  },
+  {
+    "id": "api.plugin.verify_plugin.app_error",
+    "translation": "Unable to verify plugin signature."
+  },
+  {
+    "id": "api.post.check_for_out_of_channel_group_users.message.none",
+    "translation": "@{{.GroupName}} has no members on this team"
+  },
+  {
+    "id": "api.post.check_for_out_of_channel_groups_mentions.message.multiple",
+    "translation": "@{{.Usernames}} and @{{.LastUsername}} did not get notified by this mention because they are not in the channel. They cannot be added to the channel because they are not a member of the linked groups. To add them to this channel, they must be added to the linked groups."
+  },
+  {
+    "id": "api.post.check_for_out_of_channel_groups_mentions.message.one",
+    "translation": "@{{.Username}} did not get notified by this mention because they are not in the channel. They cannot be added to the channel because they are not a member of the linked groups. To add them to this channel, they must be added to the linked groups."
   },
   {
     "id": "api.post.check_for_out_of_channel_mentions.message.multiple",
@@ -1479,6 +1691,10 @@
   {
     "id": "api.post.do_action.action_integration.app_error",
     "translation": "アクション統合エラー"
+  },
+  {
+    "id": "api.post.error_get_post_id.pending",
+    "translation": "Unable to get the pending post."
   },
   {
     "id": "api.post.get_message_for_notification.files_sent",
@@ -1569,6 +1785,30 @@
   {
     "id": "api.preference.update_preferences.set.app_error",
     "translation": "ユーザー設定を設定できませんでした。"
+  },
+ {
+    "id": "api.push_notification.disabled.app_error",
+    "translation": "Push Notifications are disabled on this server."
+  },
+  {
+    "id": "api.push_notification.id_loaded.default_message",
+    "translation": "You've received a new message."
+  },
+  {
+    "id": "api.push_notification.id_loaded.fetch.app_error",
+    "translation": "An error occurred fetching the ID-loaded push notification."
+  },
+  {
+    "id": "api.push_notifications.message.parse.app_error",
+    "translation": "An error occurred building the push notification message."
+  },
+  {
+    "id": "api.push_notifications_ack.forward.app_error",
+    "translation": "An error occurred sending the receipt delivery to the push notification service."
+  },
+  {
+    "id": "api.push_notifications_ack.message.parse.app_error",
+    "translation": "An error occurred building the push notification ack message."
   },
   {
     "id": "api.reaction.delete.archived_channel.app_error",
@@ -1719,8 +1959,24 @@
     "translation": "Slackエクスポートのzipファイルを開けませんでした。\r\n"
   },
   {
+    "id": "api.slackimport.slack_import.zip.file_too_large",
+    "translation": "{{.Filename}} in zip archive too large to process for Slack import\r\n"
+  },
+  {
     "id": "api.status.user_not_found.app_error",
     "translation": "ユーザーが見付かりません"
+  },
+  {
+    "id": "api.system.id_loaded.not_available.app_error",
+    "translation": "ID Loaded Push Notifications are not configured or supported on this server."
+  },
+  {
+    "id": "api.team.add_members.error",
+    "translation": "Error adding team member(s)."
+  },
+  {
+    "id": "api.team.add_members.user_denied",
+    "translation": "This team is managed by groups.  This user is not part of a group that is synced to this team."
   },
   {
     "id": "api.team.add_user_to_team.added",
@@ -1729,6 +1985,22 @@
   {
     "id": "api.team.add_user_to_team.missing_parameter.app_error",
     "translation": "チームにユーザーを追加するにはパラメーターが必要です。"
+  },
+  {
+    "id": "api.team.add_user_to_team_from_invite.guest.app_error",
+    "translation": "Guests are restricted from joining a team via an invite link. Please request a guest email invitation to the team."
+  },
+  {
+    "id": "api.team.demote_user_to_guest.disabled.error",
+    "translation": "Guest accounts are disabled."
+  },
+  {
+    "id": "api.team.demote_user_to_guest.license.error",
+    "translation": "Your license does not support guest accounts"
+  },
+  {
+    "id": "api.team.get_all_teams.insufficient_permissions",
+    "translation": "You don't have the appropriate permissions to list all teams"
   },
   {
     "id": "api.team.get_invite_info.not_open_team",
@@ -1766,17 +2038,33 @@
     "id": "api.team.import_team.parse.app_error",
     "translation": "マルチパートフォームを解析できません"
   },
-  {
+ {
     "id": "api.team.import_team.unavailable.app_error",
-    "translation": "不正なリクエスト: ファイルサイズ項目が存在しません。"
+    "translation": "Malformed request: filesize field is not present."
+  },
+  {
+    "id": "api.team.invalidate_all_email_invites.app_error",
+    "translation": "Error invalidating email invites."
+  },
+  {
+    "id": "api.team.invate_guests_to_channels.disabled.error",
+    "translation": "Guest accounts are disabled"
+  },
+  {
+    "id": "api.team.invate_guests_to_channels.license.error",
+    "translation": "Your license does not support guest accounts"
+  },
+  {
+    "id": "api.team.invite_guests.channel_in_invalid_team.app_error",
+    "translation": "The channels of the invite must be part of the team of the invite."
   },
   {
     "id": "api.team.invite_members.disabled.app_error",
-    "translation": "招待メールは無効化されています。"
+    "translation": "Email invitations are disabled."
   },
   {
     "id": "api.team.invite_members.invalid_email.app_error",
-    "translation": "以下の電子メールアドレスのドメインは許可されていません: {{.Addresses}}。詳細についてはシステム管理者に問い合わせてください。"
+    "translation": "The following email addresses do not belong to an accepted domain: {{.Addresses}}. Please contact your System Administrator for details."
   },
   {
     "id": "api.team.invite_members.member",
@@ -1815,6 +2103,10 @@
     "translation": "このチャンネルは %v からこのチームへ移動されました。"
   },
   {
+    "id": "api.team.remove_member.group_constrained.app_error",
+    "translation": "Unable to remove a user from a group-constrained team."
+  },
+  {
     "id": "api.team.remove_team_icon.get_team.app_error",
     "translation": "チームの取得中にエラーが発生しました"
   },
@@ -1825,6 +2117,14 @@
   {
     "id": "api.team.remove_user_from_team.removed",
     "translation": "%v はチームから削除されました。"
+  },
+  {
+    "id": "api.team.search_teams.pagination_not_implemented.private_team_search",
+    "translation": "Pagination not implemented for private-only team search."
+  },
+  {
+    "id": "api.team.search_teams.pagination_not_implemented.public_team_search",
+    "translation": "Pagination not implemented for public-only team search."
   },
   {
     "id": "api.team.set_team_icon.array.app_error",
@@ -1881,6 +2181,10 @@
   {
     "id": "api.team.update_restricted_domains.mismatch.app_error",
     "translation": "チームを{{.Domain}}に制限することはシステム設定により許可されていません。詳細はシステム管理者に問い合わせてください。"
+  },
+  {
+    "id": "api.team.update_team_member_roles.guest_and_user.app_error",
+    "translation": "Invalid team member update: A user must be a guest or a user but not both."
   },
   {
     "id": "api.team.update_team_scheme.license.error",
@@ -1975,6 +2279,14 @@
     "translation": "招待されました"
   },
   {
+    "id": "api.templates.invite_body_guest.info",
+    "translation": "[[{{.SenderName}}]], has invited you to join team [[{{.TeamDisplayName}}]] as a guest."
+  },
+  {
+    "id": "api.templates.invite_guest_subject",
+    "translation": "[{{ .SiteName }}] {{ .SenderName }} invited you to join the team {{ .TeamDisplayName }} as a guest"
+  },
+  {
     "id": "api.templates.invite_subject",
     "translation": "[{{ .SiteName }}] {{ .SenderName }} があなたを {{ .TeamDisplayName }} チームに招待しました"
   },
@@ -2013,6 +2325,18 @@
   {
     "id": "api.templates.post_body.button",
     "translation": "投稿へ行く"
+  },
+  {
+    "id": "api.templates.remove_expired_license.body.renew_button",
+    "translation": "Renew License"
+  },
+  {
+    "id": "api.templates.remove_expired_license.body.title",
+    "translation": "Enterprise license has expired and some features may be disabled. Please renew."
+  },
+  {
+    "id": "api.templates.remove_expired_license.subject",
+    "translation": "Mattermost Enterprise license has been disabled."
   },
   {
     "id": "api.templates.reset_body.button",
@@ -2203,6 +2527,10 @@
     "translation": "このサーバーではOAuth 2.0を利用した{{.Service}}のシングルサインオンは利用できません。"
   },
   {
+    "id": "api.user.create_password_token.error",
+    "translation": "Unable to create password recovery token"
+  },
+  {
     "id": "api.user.create_profile_image.default_font.app_error",
     "translation": "デフォルトのプロフィール画像の文字を作成できませんでした"
   },
@@ -2223,12 +2551,16 @@
     "translation": "ユーザーの作成は無効です。"
   },
   {
-    "id": "api.user.create_user.missing_invite_id.app_error",
-    "translation": "招待IDが存在しません。"
+    "id": "api.user.create_user.guest_accounts.disabled.app_error",
+    "translation": "Guest accounts are disabled."
   },
   {
-    "id": "api.user.create_user.missing_token.app_error",
-    "translation": "トークンが存在しません。"
+    "id": "api.user.create_user.guest_accounts.license.app_error",
+    "translation": "Your license does not support guest accounts."
+  },
+  {
+    "id": "api.user.create_user.invalid_invitation_type.app_error",
+    "translation": "Unable to create the user, invalid invitation."
   },
   {
     "id": "api.user.create_user.no_open_server",
@@ -2245,6 +2577,10 @@
   {
     "id": "api.user.create_user.signup_link_invalid.app_error",
     "translation": "利用登録リンクが不正です"
+  },
+  {
+    "id": "api.user.demote_user_to_guest.already_guest.app_error",
+    "translation": "Unable to convert the user to guest because is already a guest."
   },
   {
     "id": "api.user.email_to_ldap.not_available.app_error",
@@ -2289,6 +2625,14 @@
   {
     "id": "api.user.login.client_side_cert.license.app_error",
     "translation": "有効なエンタープライズライセンスが無い状態で、実験的な機能である ClientSideCertEnable の使用を試みています"
+  },
+  {
+    "id": "api.user.login.guest_accounts.disabled.error",
+    "translation": "Guest accounts are disabled"
+  },
+  {
+    "id": "api.user.login.guest_accounts.license.error",
+    "translation": "Your license does not support guest accounts"
   },
   {
     "id": "api.user.login.inactive.app_error",
